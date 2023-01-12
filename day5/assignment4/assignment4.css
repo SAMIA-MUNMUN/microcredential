@@ -1,0 +1,192 @@
+*{box-sizing: border-box;}
+.title{
+    background-color: purple;
+    text-align: center;
+    padding: 0.5em;
+    width: 100%;
+    border: ridge .5em black;
+    font-size: 300%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+    
+.animation{
+    height: 40%;
+    width: 40%;
+    margin: auto;
+    border: ridge 1.5em purple;
+    position: relative;
+    z-index: 1;
+}
+
+
+@keyframes cameraAppearance{
+    0%{transform: scale(0);}
+    5%{transform: scale(1);}
+    100%{transform: scale(1);}
+}
+
+.camera{
+    transform: scale(0);
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    animation-name: cameraAppearance;
+    animation-duration: 7.5s; 
+    animation-delay: 0.1s;
+ 
+}
+
+.clickText{
+    position: absolute;
+    color: purple; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    top: 2%;
+    left: 15%;
+    display: inline;
+    z-index: 2;
+    transform: scale(0);
+    animation: clickAppearance;
+    animation-duration: 7s; 
+    animation-delay: 0.5s;
+}
+
+@keyframes clickAppearance{
+    0%{transform: scale(0);}
+    5%{transform: scale(1.5);top: 30%; left: 20%;}
+    75%{transform: scale(1.5);top: 30%; left: 20%;filter: invert(80%);}
+    85%{transform: scale(1.5);top: 30%; left: 20%;opacity: invert(90%);}
+    95%{transform: scale(1.5);top: 30%; left: 20%;opacity: invert(100%);}
+    100%{transform: scale(1.5);top: 30%; left: 20%;}
+}
+
+.kaaba{
+    width: 100%;
+    display: block;
+    animation-name: KaabaInvert;
+    animation-delay: 6s;
+    animation-duration: 0.2s;
+    animation-iteration-count: 2;
+}
+
+
+@keyframes KaabaInvert{
+    from{filter: invert(0);}
+    to{filter: invert(100%);}
+}
+
+
+@keyframes pumpingHeart1{
+    0%{opacity: 1;}
+    1%{transform: scale(1);}
+    9%{opacity: 0;}
+    18%{opacity: 1;}
+    27%{opacity: 0;}
+    36%{opacity: 1;}
+    45%{opacity: 0;}
+    54%{opacity: 1;}
+    63%{opacity: 0;}
+    72%{opacity: 1;}
+    80%{opacity: 0;}
+    100%{opacity:1;}
+    
+}
+@keyframes pumpingHeart{
+    0%{opacity: 0;}
+    1%{transform: scale(1);}
+    9%{opacity: 1;}
+    18%{opacity: 0;}
+    27%{opacity: 1;}
+    36%{opacity: 0;}
+    45%{opacity: 1;}
+    54%{opacity: 0;}
+    63%{opacity: 1;}
+    72%{opacity: 0;}
+    80%{opacity: 1;}
+    90%{opacity: 0;}
+    95%{opacity: 1;}
+    100%{opacity: 0;}
+}
+.heart1, .heart2, .heart3, .heart4, .heart5, .heart6, .heart7, .heart8, .heart9, .heart10, .heart11, .heart12 {
+    position: absolute;
+    opacity: 0;
+    animation-delay: 7.5s;
+    animation-iteration-count: infinite;
+}
+.heart1, .heart3, .heart5, .heart7, .heart9, .heart11 {
+    animation-name: pumpingHeart;
+}
+.heart2, .heart4, .heart6, .heart8, .heart10, .heart12 {
+    animation-name: pumpingHeart1;
+}  
+.heart1{
+    width: 8%;
+    top: 5%;
+    left: 5%;
+    animation-duration: 0.5s;
+}
+.heart2{
+    width: 12%;
+    top: 25%;
+    left: 15%;
+    animation-duration: 1s;
+}
+.heart3{
+    width: 10%;
+    top: 0%;
+    left: 30%;
+    animation-duration: 1.5s;
+}
+.heart4{
+    width: 10%;
+    top: 80%;
+    left: 20%;
+    animation-duration: 2s;
+}
+.heart5{
+    width: 15%;
+    top: 65%;
+    left: 45%;
+    animation-duration: 0.5s;
+}
+.heart6{
+    width: 20%;
+    top: 25%;
+    left: 35%;
+    animation-duration: 0.5s;
+}
+.heart7{
+    width: 10%;
+    top: 55%;
+    left: 5%;
+    animation-duration: 1s;
+}
+.heart8{
+    width: 10%;
+    top: 78%;
+    left: 70%;
+    animation-duration: 0.5s;
+}
+.heart9{
+    width: 10%;
+    top: 12%;
+    left: 75%;
+    animation-duration: 1.5s;
+}
+.heart10{
+    width: 15%;
+    top: 40%;
+    left: 80%;
+    animation-duration: 2s;
+}
+.heart11{
+    width: 15%;
+    top: 40%;
+    left: 55%;
+    animation-duration: 0.5s;
+}
+.heart12{
+    width: 10%;
+    top: 2%;
+    left: 60%;
+    animation-duration: 1s;
+}
