@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 5 - Samia Munmun</title>
+</head>
+<body>
+    <h1>Samia Munmun</h1>
+    <!-- JAVASCRIPT -->
+    <script>
+        /*
+        let firstName;
+        let x = 100, y = -1.5, z = 7;
+        let boolean1 = true, boolean2 = false;
+        let lastName;
+        let name = null;
+
+        firstName = 'Maria';
+        firstName = "Peter";
+
+        // console logs
+        console.log('Hello there!');
+        console.log(firstName, y);
+        console.log('First name = ', firstName);
+        console.log(firstName + ' is my first name.');
+        console.log(`${firstName} is my first name.`);
+
+        // Addition
+        console.log(`Adding x and y gives us: ${x+y}.`);
+        console.log(`Adding x and firstName gives us: ${x+firstName}.`);
+
+        // typeof
+        let isNumber = typeof(x);
+        console.log(`x is of type ${isNumber}`);
+        let isString = typeof(firstName);
+        console.log(`firstName is of type ${isString}`);
+        let isBoolean = typeof(boolean1);
+        console.log(`boolean1 is of type ${isBoolean}`);
+        let isObject = typeof(name);
+        console.log(`name is of type ${isObject}`);
+
+        // prompt
+        let fullName = prompt('Please enter a name: ');
+        console.log(`The entered name is: ${fullName}`);
+        console.log('Type of fullName is: ', typeof(fullName));
+        let allUpperCase = fullName.toUpperCase();
+        console.log(allUpperCase);
+
+        // prompt value is stored as string
+        // so adding num1 and num2 will just join the two values as strings
+        // so the sumAsString returned is of type string
+        // e.g. '4' + '5' will give us '45'
+        let num1 = prompt('Enter number 1: ');
+        let num2 = prompt('Enter number 2: ');
+        let sumAsString = num1 + num2;
+        console.log('Sum: ', sumAsString);
+        console.log('type of sumAsString is: ', typeof(sumAsString));
+
+        // in order to add two prompt values as integers, need to convert prompt values which are strings to integer first
+        // the sum returned now is of type number
+        let number1 = parseInt(prompt('Enter number 1: '));
+        let number2 = parseInt(prompt('Enter number 2: '));
+        let sum = number1 + number2;
+        let allupperCase = fullName.toUpperCase()
+        console.log(allupperCase);
+        console.log('Sum is: ', sum);
+        console.log('type of sum is: ', typeof(sum));
+
+
+        let myString = "Queensborough Community College"
+        console.log(myString);
+        let stringLocation = myString.search('Col');
+        console.log(`The index location for Co is: ${stringLocation}`);
+
+        // remove white space in a string
+        let name1 = '    William       Smith   ';
+
+        // substracting characters
+        let subWord = myString.substr(6,7);
+        console.log(subWord);
+
+        // first find the position of the word and then substract 5 character from the word
+        let findFirst = myString.search('Com');
+        let subSec = myString.substr(findFirst, 5);
+        console.log(`The substracted characters are ${subSec}`);
+
+        // extract characters from a string
+        let extractCharacter = myString.slice(6, 10);
+        console.log(`The extracted characters are ${extractCharacter}`);
+
+        // Arrays
+        let fruits;
+        fruits = ['apples', 'oranges', 'grapes', 'h'];
+
+        let cars = ['Nissan', 'Tesla', 'Mazda', 'Mercedes'];
+        let mixedItems = [65, true, 'cats'];
+
+        console.log(fruits);
+        console.log(cars);
+        console.log(mixedItems);
+        console.log(`The second item in array fruits is: ${fruits[1]}`);
+
+        // nesting arrays
+        let countries = ['Canada', 'USA', ['Mexico', 'Panama', 'Brazil']];
+        console.log(countries);
+        console.log(countries[1][1]);
+        console.log(countries[2][1]);
+
+        // reverse array
+        mixedItems = [65, true, 'cats'];
+        mixedItems.reverse();
+        console.log(mixedItems);
+
+        // shirt removes first array item
+        mixedItems = [65, true, 'cats'];
+        mixedItems.shift();
+        console.log(mixedItems);
+
+        // unshift to add array items in the beginning
+        mixedItems = [65, true, 'cats'];
+        mixedItems.unshift('NY', -120);
+        console.log(mixedItems);
+
+        // push to add array items in the end
+        mixedItems = [65, true, 'cats'];
+        mixedItems.push(false, 3.5);
+        console.log(mixedItems);
+
+        // slice: creates a copy of an array
+        let newItems = mixedItems;
+        let newItemSlice = mixedItems.slice();
+
+        // indexOf finds index of an array item, -1 if not found
+        mixedItems = [65, true, 'cats', 'ORANGE', false];
+        let indexOfCats = mixedItems.indexOf('cats');
+        let charCats = mixedItems[indexOfCats];
+        let secondCharOfCats = charCats[1];
+        console.log(indexOfCats);
+        console.log(charCats);
+        console.log(secondCharOfCats);
+
+        // join: converts array to string
+        mixedItems = [65, true, 'cats', 'ORANGE', false];
+        // empty argument uses comma for separation
+        let mixedItemsString1 = mixedItems.join();
+        console.log(mixedItemsString1);
+        // argument uses that to separate array items
+        let mixedItemsString2 = mixedItems.join(' --- ');
+        console.log(mixedItemsString2);
+*/
+    
+        // -------- Activity 5 -------------
+        // Activity 5.1
+        console.log('===== Activity 5.1 =====');
+        let name = prompt('Enter a name: ');
+        let luckyNumber = parseInt(prompt('Enter your lucky number: '));
+
+        // console log using '+' sign
+        console.log('Welcome to the program ' + name + '. Your lucky number is ' + luckyNumber);
+
+        // console log using template literal
+        console.log(`Good morning ${name}. Your entered number: ${luckyNumber}`);
+
+        // Activity 5.2
+        console.log('===== Activity 5.2 =====');
+        let myString = "Queensborough Community College";
+        let word = prompt('Enter a word: ');
+        //let findWord = myString.search(word);
+        let secondCharacterStr = word.substr(1,1);
+        console.log(`The second letter of the word is: ${secondCharacterStr}`);
+        let wordLength = word.length;
+        console.log(`The length of word ${word} is ${wordLength}`);
+        let wordAllUpperCase = word.toUpperCase();
+        console.log(`Uppercase: ${wordAllUpperCase}`);
+        let lastTwoCharacters = word.slice(-2);
+        console.log(`The last two characters of the word ${word} is ${lastTwoCharacters}`);
+
+        // Activity 5.3
+        console.log('===== Activity 5.3 =====');
+        let myArray = [20, 'red', false, 'pink', 3, 'c'];
+        console.log(`Mixed array with initial values: ${myArray}`);
+
+        let animal = prompt('Enter an ANIMAL: ');
+        myArray.push(animal);
+        console.log(`Mixed array with a new animal added to the end: ${myArray}`);
+
+        let negativeNumber = parseInt(prompt(`Enter a NEGATIVE NUMBER: `));
+        myArray.unshift(negativeNumber);
+        console.log(`Mixed array with a new NEGATIVE NUMBER added to the front, beginning, of the array: ${myArray}`);
+
+        let copyArray = myArray.slice();
+        copyArray.reverse();
+        console.log(`Mixed array ${myArray} and reverse of copy array: ${copyArray}`);  
+    </script>
+</body>
+</html>
