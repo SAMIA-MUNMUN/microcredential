@@ -1,0 +1,315 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title-common {
+    animation: saudiAnimation 3s linear infinite;
+}
+  
+.title-common-1 {
+--color-1: #DF8453;
+--color-2: #3D8DAE;
+--color-3: #E4A9A8;
+}
+
+.title-common-2 {
+--color-1: #DBAD4A;
+--color-2: #ACCFCB;
+--color-3: #17494D;
+}
+
+@keyframes saudiAnimation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+.header{background-color: navy;padding: 1em;}
+.saudi{text-align: center;font-size: 2.2em;margin: 0;color: bisque;}
+.kaaba{text-align: center;font-size: 1.2em;margin: 0;color: bisque;}
+.imageContainer,.mainContainer{position: relative;text-align: center;}
+.introImage{
+    width: 100%;
+    text-align: center;
+    border: 5px solid brown;
+    filter: grayscale(50%);
+}
+.author{
+    position: absolute;
+    top: 0%;
+    left: 20%; right: 20%;
+    text-align: center;
+    font-size: 300%;
+}
+.intro{
+    position: absolute;
+    top: 12%;
+    left: 20%; right: 20%;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aquamarine;
+    font-style: italic;
+    display: block;
+    animation-name: titleAnimation;
+    animation-duration: 2s;
+}
+@keyframes titleAnimation {
+    0% {transform: scale(0);}
+    33% {opacity: 0.33;}
+    66% {opacity: 0.66;}
+    100% {transform: scale(1);}
+}
+.navTabs{
+    position: absolute;
+    width: 100%;
+    bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nav{
+    display: inline-block;
+    padding: 1em;
+    width: 28%;
+    background-color: rgba(36, 71, 167, 0.6);
+    color: aquamarine;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 10px;
+    transition: 500ms;
+    text-decoration: none;
+}
+
+.nav:hover{
+    background-color: rgba(32, 161, 82, 0.8);
+    box-shadow: 0px 0px 5px 1px white;
+}
+.introduction{
+    display: block;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+.introduction h1 {
+    display: block;
+    font-size: 2.5em;
+}
+.introduction p {
+    display: block;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-size: 1.15em;
+}
+.details{
+    display: block;
+    border: solid 1px goldenrod;
+}
+.description{
+    display: block;
+    background-color: antiquewhite;
+}
+.textSection, .imageSection{
+    display: inline-block;
+    width: 49.5%;
+    vertical-align: middle;
+}
+.textSection h1 {
+    font-size: 2em;
+}
+.textSection p {
+    width: 80%;
+    margin: auto;
+    font-size: 1.25em;
+}
+.textSection a {
+    text-decoration: none;
+}
+.textSection a p:hover {
+    background-color: blueviolet;
+    color: aliceblue;
+}
+.textSection a p {
+    background-color: burlywood;
+    color: darkslategrey;
+    padding: 1em;
+    text-align: center;
+    border-radius: 2em;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+}
+.textSection1{display: none;}
+.imageSection img {
+    background-color: red;
+    width: 100%;
+    border: 5px solid brown;
+    border-radius: 2%;
+    padding: 1em;
+    box-shadow: 50px 0 50px rgba(17, 12, 12, 0.2);
+}
+.imageSection img:hover {
+    filter: sepia(30%);
+}
+
+.additionalInfo{
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding-top: 3%;
+}
+.infoHeader{
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+    padding-bottom: 1%;
+}
+.lists{
+    display: block;
+    text-align: left;
+    padding-bottom: 1%;
+}
+.list{
+    display: inline-block;
+    vertical-align: middle;
+    width:49.5%;
+}
+.list h2{
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 0.5em;
+}
+.list ul li{
+    font-size: 1vw;
+    margin-left: 0.5em;
+    padding-bottom: 1em;
+}
+.additionalInfo h1{
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+    padding-bottom: 1%;
+}
+#tableHeader{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.priceTable{
+    border-collapse: collapse;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 10px rgb(101, 38, 38);
+}
+.entry{
+    border: 2px solid black;
+    padding: 1em;
+}
+.entry span{
+    color: red;
+    font-size: 0.8em;
+}
+#firstRow{
+    background-color:burlywood;
+    color: darkslategrey;
+    font-weight: bolder;
+}
+#lastRow{
+    font-weight: bold;
+    background-color:lightgray;
+    color: green;
+}
+footer {
+    display: block;
+    margin-top: 10%;
+    background-color: chocolate;
+    color: antiquewhite;
+    text-align: center;
+}
+.footerSection{
+    padding: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+}
+.footerSection p{
+    display: block;
+    text-align: left;
+}
+.footerSection a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.footerSection a:hover{
+    color: lightblue;
+}
+.fTitle{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.sub1, .sub2{
+    font-size: 1em;
+}
+.sub2{
+    font-style: italic;
+}
+/* MEDIUM SCREEN */
+
+@media only screen and (max-width: 1000px) and (min-width:880px)
+{
+    .navTabs{bottom: 5%;}
+    .intro{font-size:1.75em;top: 8%;} 
+    .nav{width: 25%; font-size: 1.1em;}
+    .textSection h1{font-size: 1.5em;}
+    .textSection p{font-size: 1em;}
+}
+@media only screen and (max-width: 879px) and (min-width: 700px){
+    
+    .intro{top: 5%; font-size: 1.5em;}
+    .navTabs{bottom: 5%;}
+    .nav{width: 20%; padding: 0.5em; font-size: 1em;}
+    .textSection h1{font-size: 1.25em;}
+    .textSection p{font-size: 0.75em;}
+    .footerSection p, .footerSection a p{font-size: 0.75em;}   
+}
+
+/*SMALL SCREEN */
+@media only screen and (max-width: 699px) and (min-width:500px){
+    .intro{font-size:1.25em;top: 3%;} 
+    .navTabs{bottom: 5%;font-size: 1em;padding: 0.5em;}
+    .nav{width: 28%; padding: 0.5em; font-size: 0.8em;}
+    .textSection h1{font-size: 1.25em;}
+    .textSection p{font-size: 0.75em;}
+    .textSection1{display: inline-block;}
+    .textSection2{display: none;}
+    .footerSection p, .footerSection a p{font-size: 0.5em;}
+    .lists{text-align: center;}
+    .list ul li{font-size: 2vw;}
+    .priceTable{font-size: 1em;}
+}
+/* x-SMALL SCREEN */
+@media only screen and (max-width: 499px){   
+    .intro{font-size:0.75em;top: 1%;}
+    .navTabs{bottom: 5%;}
+    .nav{width: 33%; padding: 0.3em; font-size: 0.5em; border-radius: 0%;}
+    .textSection h1{font-size: 1.25em;}
+    .textSection p{font-size: 0.75em;}
+    .textSection1{display: inline-block;}
+    .textSection2{display: none;}
+    .footerSection p, .footerSection a p{font-size: 0.75em;}
+    .list ul li{font-size: 5vw;}
+    .lists{text-align: center;}
+    .priceTable{font-size: 1em;}
+}
