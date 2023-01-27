@@ -1,0 +1,136 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+.container{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 17em;
+    margin: 1%;
+    border: solid 1px;
+    
+    
+}
+
+
+.imgCont{
+    width: 100%;
+    height: 62%;
+    background-color: white;
+    overflow: hidden;
+
+}
+.itemImg{
+    width: 40%;
+    margin-left: 30%;
+    padding-top: 1em;
+}
+.infoItem{
+    text-align: center;
+}
+.p1{
+    color: lightseagreen;
+    font-weight: 900;
+}
+.p2{
+    font-weight: 900;
+    font-size: 1.2em;
+    margin-top: -0.5em;
+
+}
+.p3{
+    color: rgb(50,50,50);
+    margin-top: -1em;
+
+}
+.p4{
+    font-size: 1.5em;
+    margin-top: 1em;
+    font-weight: 900;
+}
+.p5{
+    color: red;
+    font-weight: 900;
+    margin-top: -1em;
+}
+.link{
+    background-color: rgb(50,50,50);
+    color: whitesmoke;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+    font-weight: 900;
+}
+.link:hover{
+    background-color: whitesmoke;
+    color: rgb(50,50,50);
+}
+
+/* MODAL WINDOW ITEM 1 */
+.modalWindow{
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(50,50,50,0.6);
+    display: none;
+
+}
+.modalContent{
+    width: 40%;
+    height: 80%;
+    margin: 5% auto;
+    background-color: white;
+    
+}
+.modalHead{
+    width: 70%;
+    
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: rgb(50,50,50);
+    border-bottom: inset lightgray 2px;
+    margin: 1em 3em;
+    padding-top: 1em;
+    float: left;
+}
+.modalHeadX{
+    float: right;
+    font-size: 1.5em;
+    padding: 0.5em;
+
+}
+.modalHeadX:hover{
+    background-color: black;
+    transition: ease-in-out 0.3s;
+    color: whitesmoke;
+
+}
+
+.modalTop{
+    display: flex;
+}
+.modalBody{
+    display: flex;
+
+}
+.modalImg{
+    width: 30%;
+}
+.modalInfo{
+    width: 70%;
+    text-align: center;
+}
+.modalImg img{
+    width: 50%;
+    margin-left: 5em;
+}
