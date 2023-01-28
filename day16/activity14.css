@@ -1,0 +1,68 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+/* MENU */
+.openMenu{
+    background-color: aquamarine;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bolder;
+    padding: 0.5em;
+}
+
+.openMenu:hover{
+    background-color: darkblue;
+    color: whitesmoke;
+}
+.openMenu:after{
+    content: '\26BD'; /* 2715 */
+    float: right;
+}
+.menu{
+    background-color: lightcyan;
+    transition: ease-in-out 1s;
+    opacity: 0;
+}
+.menu a{
+    display: block;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: brown;
+    transition: ease-in-out 0.3s;
+}
+.menu a:hover{
+    background-color: chocolate;
+    color: whitesmoke;
+    box-shadow: 1px 1px 5px black;
+}
+.active{
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+.active:after{
+    content: "\2715" ;
+}
+.openClose{
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+/*FORMS */
+.submit1{background-color: black;
+color: whitesmoke;
+border-radius: 1em;
+padding: 0.5em 1em;
+
+}
+.submit1:hover{
+    background-color: whitesmoke;
+    color: purple;
+    border: none;
+    box-shadow: 0px 0px 5px 1px gray;
+}
+
+
+
