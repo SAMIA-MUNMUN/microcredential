@@ -1,0 +1,33 @@
+.nawawi{
+    height: 100%;
+    background-color: rgb(176, 158, 93);
+}
+.fahad{
+    height: 100%;
+    background-color: rgb(104, 101, 145);
+}
+.pictures{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 50%;
+    padding: 1em;
+}
+.pictures1 img{
+    width: 30%;
+    border: 5px solid rgb(101, 79, 23);
+    border-radius: 5%;
+}
+.pictures2 img{
+    width: 30%;
+    border: 5px solid blue;
+    border-radius: 5%;
+}
+.content{
+    font-size: 1.5em;
+    padding: 1em;
+    height: 50%;
+    padding-top: 4em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
