@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Created - MZ Wedding Collections</title>
+    <link rel="stylesheet" href="project2.css">
+</head>
+<body class="body">
+
+    <section class="pos">
+        <header class="head">
+            <img  id="home" src="head.JPG" alt="mzWeddingCollection">
+        </header>
+        <div class="navs">
+            <a id="homeLink" href="project2.html">Home</a>  
+            <a href="account.html">Create an Account</a>
+            <a id="goToCartLink" href="cart.html">Go To Cart
+                <img src="bag.png" alt="Image of a cart icon" class="cartBag">
+                <span id="badge"></span>
+            </a>
+        </div>
+        <div class="block"></div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <h1>Your Account has been Created!</h1>
+    
+    <p>Your Email Address: <span id="result_email">.......</span></p>
+    <script>
+        let printEmail = document.querySelector('#result_email')
+        printEmail.innerHTML = sessionStorage.getItem('emailA')
+    </script>
+    <p>Your Username: <span id="result_name">.......</span></p>
+    <script>
+        let printName = document.querySelector('#result_name')
+        printName.innerHTML = sessionStorage.getItem('userN')
+    </script>
+    <script src="global.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            getTotalCartItems();
+        });
+    </script>
+    
+</body>
+</html>

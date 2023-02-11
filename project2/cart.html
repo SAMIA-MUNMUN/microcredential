@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - MZ Wedding Collections</title>
+    <link rel="stylesheet" href="project2.css">
+</head>
+<body style="background-color: aliceblue;">
+    <section class="pos">
+
+        <header class="head">
+            <img  id="home" src="head.JPG" alt="mzWeddingCollection">
+        </header>
+
+        <div class="navs">
+                <a id="homeLink" href="project2.html">Home</a>  
+                <a href="account.html">Create an Account</a>
+                <a id="goToCartLink" href="cart.html">Go To Cart
+                    <img src="bag.png" alt="Image of a cart icon" class="cartBag">
+                    <span id="badge"></span>
+                </a>
+        </div>
+        <div class="block"></div>
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <center><h1>Shopping Cart</h1></center> 
+    <hr>
+    <section id="cart" class="section-p1"></section>
+    <script src="cartItems.js"></script>  
+    <script src="cart.js"></script>
+    <script src="global.js"></script>
+    <button class="checkout"><a href="#shipping" style="text-decoration: none;">CHECKOUT</a></button>
+
+    <!-- modal window for cart -->
+
+    <section class="cartModal" id="cartWindow">
+        <div class="cartContent">
+            <header class="cartmodalTop">
+                <button class="cartmodalHeadX" style="float: right; margin-right: -4%; margin-top: -3%;cursor: pointer;">
+                    ⛌</button>
+            </header>
+            <h1 class="heading1">Shipping  Information</h1>
+            <form action="thankyou.html" method="post">
+                
+                <div class="shippingInfo">
+                    <div class="name">
+                        <label for>First Name</label>
+                        <input type="text" placeholder="Enter Your First Name"required>
+                        <label for>Last Name</label>
+                        <input type="text" placeholder="Enter Your Last Name"required>
+                    </div>
+                    <div class="shipad">
+                        <label for>Shipping Address</label>
+                        <input type="address" name="adress" placeholder="Enter Your Address"required>
+                    </div>
+                    <div class="shippingadress">
+                        <label for>City</label>
+                        <input type="city" name="city" placeholder="City"required>
+                        <label for>ZIP Code</label>
+                        <input type="zipcode" name="zipcode" placeholder="ZIP-Code"required>
+                    </div>
+                    <div class="contactinfo">
+                        <h2 class="heading2"><b>Contact Information</b></h2>
+                    </div>
+                    <div class="shipad">
+                        <label for>Email Address</label>
+                        <input type="emailadress" name="emailadress" placeholder="Enter Your Email Address"required>
+                    </div>
+                    <div class="phone shipad">
+                        <label for>Phone Number</label>
+                        <input type="Phone Number" name="Phone Number" placeholder="Enter Your Phone Number"required>
+                    </div>
+                    
+                    <br>
+                    <br>
+                    <div>
+                        
+                        <input type="submit" value="SUBMIT" style="float: right; margin-right: -4%;">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </section>    
+    
+</body>
+</html>

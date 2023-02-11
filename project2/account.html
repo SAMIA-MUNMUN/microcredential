@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create An Account - MZ Wedding Collections</title>
+    <link rel="stylesheet" href="project2.css">
+</head>
+<body style="background-color: aliceblue;">
+    <section class="pos">
+
+        <header class="head">
+            <img  id="home" src="head.JPG" alt="mzWeddingCollection">
+        </header>
+
+        <div class="navs">
+                <a id="homeLink" href="project2.html">Home</a>  
+                <a id="goToCartLink" href="cart.html">Go To Cart
+                    <img src="bag.png" alt="Image of a cart icon" class="cartBag">
+                    <span id="badge"></span>
+                </a>
+        </div>
+        <div class="block"></div>
+
+    </section>
+    <br>
+    <br>
+    <br>
+
+    <center><h1>Create an Account</h1></center>
+    <form action="accountCreated.html" method="post">
+        <fieldset>
+            <legend>Enter Personal info</legend>
+            <p>Enter Email Address: </p>
+            <input type="text" name="email"placeholder="Enter an email" id="useremail"required>
+            <p>Enter username: </p>
+            <input type="text" name="username" maxlength="20" placeholder="Enter a username" id="user"required>
+            <p>Password info:</p>
+            <input type="password" name="password" placeholder="Enter a password"required>
+            <p>Gender: </p>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male </label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female </label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+            <br>
+            <br>
+            <input type="submit" value="SUBMIT" class="submit1">
+        </fieldset>
+    </form>
+    
+   
+    <script src="account.js"></script>
+    <script src="global.js"></script>
+</body>
+</html>

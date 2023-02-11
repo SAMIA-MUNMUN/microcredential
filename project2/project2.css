@@ -1,0 +1,708 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+
+.body{
+    background-color: aliceblue;
+    animation-name: animation;
+    animation-delay: 2s;
+}
+
+.pos{
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+.head{
+   
+    display: block;
+    width: 100%;
+    animation-name: animation;
+    animation-duration: 2s;
+    border-bottom: 3px solid rgb(142, 1, 90);
+}
+
+@keyframes animation {
+    0% {transform: scale(0);}
+    33% {opacity: 0.3;}
+    66% {opacity: 0.6;}
+    100% {transform: scale(1);}
+}
+
+@keyframes animationSecond {
+    0% {opacity: 0;}
+    33% {opacity: 0.3;}
+    66% {opacity: 0.6;}
+    100% {opacity: 1;}
+}
+
+.opacityEffect{
+    animation-name: animationSecond;
+    animation-duration: 2s;
+}
+
+.head img{
+    width: 100%;
+    display: block;
+}
+
+.navs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+    padding-top: 1.5%;
+}
+
+.navs a{
+    font-size: 1.5vw;
+    color: rgb(203 12 118 / 90%);
+    text-decoration: none;
+}
+
+#goToCartLink{
+    position: relative;
+}
+
+.cartBag{
+    position: absolute;
+    width: 36%;
+    top: -35%;
+    right: -35%;   
+}
+
+#badge{
+    position: absolute;
+    top: -50%;
+    right: -42%;
+    padding: 4% 7%;
+    border-radius: 50%;
+    background: deeppink;
+    color: white;
+    font-size: 35%;
+    font-weight: bold;
+}
+
+.block{
+    display: block;
+    width: 100%;
+    height: 1em;
+    background-color: lightslategray;
+}
+
+.imageContainer{
+    display: flex;
+    border: 3px solid lightgray;
+}
+
+.videoCon{
+    width: 29.9%;
+    
+    position: relative;
+}
+
+.video{
+    width: 100%;
+    animation-duration: 2s;
+    display: block;
+    bottom: 0%;
+    left: 1%;    
+}
+
+.logo{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    width: 23%;
+    height: 7%;
+}
+
+.intImage{
+    width: 75.1%;
+}
+
+.introImage{    
+    animation-duration: 2s;
+    display: block;
+    width: 100%;
+}
+
+.navTabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 3% 0;
+}
+
+.nav{
+    padding: 1%;
+    width: 25%;
+    background-color: rgb(71 176 179 / 40%);
+    color: rgb(203 12 118 / 90%);
+    text-align: center;
+    font-size: 1.25vw;
+    border-radius: 10px;
+    transition: 500ms;
+    text-decoration: none;
+    font-weight: bold;
+    animation-name: navAnimation;
+    animation-duration: 2s;
+}
+
+.selected{
+    background-color: lightgray;
+    border: solid 5px darkgray;
+}
+
+@keyframes navAnimation {
+    0% {transform: scale(0);}
+    33% {opacity: 0.3;}
+    66% {opacity: 0.6;}
+    100% {transform: scale(1);}
+}
+
+.nav:hover{
+    background-color: rgba(4, 145, 53, 0.6);
+    color: rgb(128, 0, 117);
+    font-weight: bold;
+    box-shadow: 0px 0px 5px 1px white;
+}
+.container{    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 30em;
+    margin: 1%;
+    border: solid 0.2px;
+}
+
+.imgCont{
+    width: 100%;
+    height: 62%;
+    overflow: hidden;
+   
+}
+.l1,.l2,.l3,.l4,.l5,.l6,.l7,.l8,.l9,.l10,.l11,.l12,.l13,.l14,.l15{
+    display: block;
+    text-decoration: none;
+}
+
+.itemImg{
+    display: block;
+    width: 50%;
+    margin: 1em auto;
+}
+
+.infoItem{
+    text-align: center;
+}
+
+.p1{
+    color: lightseagreen;
+    font-weight: 900;
+}
+
+.p2{
+    font-weight: 900;
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+.p3{
+    color: sienna;
+    margin-top: -1em;
+    font-weight: bold;
+}
+
+.p4{
+    font-size: 1.5em;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.p5{    
+    color: red;
+    font-weight: 900;
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+.brand{
+    color: black;
+    font-weight: 800;
+    font-family: cursive;
+}
+
+.aboutUs {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #afafaf5c;
+    margin-top: 12%;
+    border-top: 13px solid #b37304bf;
+    padding: 2%;
+}
+
+.linkItem{
+    display: block;
+}
+
+.link{
+    background-color: rgb(50,50,50);
+    color: whitesmoke;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+    font-weight: 900;
+    
+}
+
+.link:hover{
+    background-color: whitesmoke;
+    color: rgb(50,50,50);
+}
+
+.footer{
+    background-color: #afafafb3;
+    display: block;
+    border-top: 20px solid #b37304bf;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.call{
+    text-align: center;
+}
+
+.social{
+    text-align: center;
+}
+
+.social img{
+    width: 2%;
+}
+
+.author{
+    text-align: center;
+    margin-top: 5%;
+    font-family: cursive;
+    font-weight: 700;
+}
+
+/* MODAL WINDOW ITEM 1 */
+.modalWindow{
+    position: fixed;
+    top: 5%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(50,50,50,0.6);
+    display: none;
+}
+
+.modalContent{
+    width: 49%;
+    height: 75%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(217, 219, 167,0.9);
+    border: 7px solid goldenrod;
+    border-radius: 1%;    
+}
+
+.modalHeadX{
+    float: right;
+    font-size: 1.1em;
+    padding: 0.5em;
+    
+}
+
+.modalHeadX:hover{
+    background-color: black;
+    transition: ease-in-out 0.3s;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.modalBody{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: beige;
+    border-bottom: 3px solid palegoldenrod;
+}
+
+.modalImg{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    width: 30%;
+}
+
+.modalImg img{
+    
+    border: 5px solid rgb(112, 105, 25);
+    border-radius: 1%;
+    display: block;
+    margin-top: -7%;
+}
+
+.modalInfo{
+    width: 30%;
+    text-align: center;
+    padding-top: 13%;
+}
+
+.modalFooter{
+    display: block;
+    width: 100%;
+    padding-top: 1em;
+    padding-left: 1em;
+    margin-top: -3%;
+}
+
+.list{
+    padding-left: 1em;
+}
+
+.modalDescription{
+    display: none;
+    width: 100%;
+    padding-top: 1em;
+    padding-left: 1em;
+    margin-top: -3%;
+}
+
+/* MEDIUM SCREEN */
+@media only screen and (max-width: 3100px) and (min-width:1501px)
+{
+    @media only screen and (max-height: 980px) and (min-height: 870px) {
+        .modalContent{height: 71%;margin-top: 9%;} 
+        .modalHeadX{font-size: 1.1em;padding: 0.5em;}
+        .modalBody{width: 100%;font-size: 70%;margin-top: 9%;}
+        .modalImg{margin-top: 3.2%;margin-bottom: 2%;}
+        .modalInfo{padding-top: 9%;padding-right: 5%;}
+        .modalImg img{width: 95%;margin-left: 18%;}
+        .modalFooter{font-size: 83%; padding-top: 3%;}
+    }
+    @media only screen and (max-height: 869px) and (min-height: 760px) {
+        .modalContent{height: 76%;margin-top: 9%;} 
+        .modalHeadX{font-size: 1.1em;padding: 0.5em;}
+        .modalBody{width: 100%;font-size: 70%;margin-top: 9%;}
+        .modalImg{margin-top: 3.2%;margin-bottom: 2%;}
+        .modalInfo{padding-top: 5%;padding-right: 5%;}
+        .modalImg img{width: 74%;margin-left: 18%;}
+        .modalFooter{font-size: 83%; padding-top: 3%;}
+    }
+    @media only screen and (max-height: 759px) and (min-height: 130px) {
+        .modalContent{height: 64%;margin-top: 9%;} 
+        .modalHeadX{font-size: 1.1em;padding: 0.5em;}
+        .modalBody{width: 96%;font-size: 70%;margin-top: 7%; margin-left:2%;height: 82%;}
+        .modalImg{margin-top: 9.2%;margin-bottom: 2%;}
+        .modalInfo{padding-top: 5%;padding-right: 5%;width: 30%;font-size: 1.6vh;}
+        .modalImg img{width: 78%;margin-left: 18%;margin-top: -27%;height: 44vh;}
+        .modalFooter{display: none;}
+        .modalDescription{display: block;width: 30%;padding-top: 7%;padding-left: 0;font-size: 1.6vh;}
+    }
+    
+}
+
+@media only screen and (max-width: 1500px) and (min-width:1101px)
+{
+    @media only screen and (max-height: 980px) and (min-height: 870px) {
+        .modalContent{height: 64%;margin-top: 9%;} 
+        .modalHeadX{font-size: 1.1em;padding: 0.5em;}
+        .modalBody{width: 100%;font-size: 70%;margin-top: 9%;}
+        .modalImg{margin-top: 3.2%;margin-bottom: 2%;}
+        .modalInfo{padding-top: 9%;padding-right: 5%;}
+        .modalImg img{width: 95%;margin-left: 18%;}
+        .modalFooter{font-size: 83%; padding-top: 3%;}
+    }
+    @media only screen and (max-height: 869px) and (min-height: 760px) {
+        .modalContent{height: 64%;margin-top: 9%;} 
+        .modalHeadX{font-size: 1.1em;padding: 0.5em;}
+        .modalBody{width: 100%;font-size: 70%;margin-top: 9%;}
+        .modalImg{margin-top: 3.2%;margin-bottom: 2%;}
+        .modalInfo{padding-top: 5%;padding-right: 5%;}
+        .modalImg img{width: 74%;margin-left: 18%;}
+        .modalFooter{font-size: 83%; padding-top: 3%;}
+    }
+    @media only screen and (max-height: 759px) and (min-height: 130px) {
+        .modalContent{height: 64%;margin-top: 9%;} 
+        .modalHeadX{font-size: 1.1em;padding: 0.5em;}
+        .modalBody{width: 96%;font-size: 70%;margin-top: 7%; margin-left:2%;height: 82%;}
+        .modalImg{margin-top: 9.2%;margin-bottom: 2%;}
+        .modalInfo{padding-top: 5%;padding-right: 5%;width: 30%;font-size: 1.6vh;}
+        .modalImg img{width: 78%;margin-left: 18%;margin-top: -27%;height: 44vh;}
+        .modalFooter{display: none;}
+        .modalDescription{display: block;width: 30%;padding-top: 7%;padding-left: 0;font-size: 1.6vh;}
+    }
+    
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 901px){
+    @media only screen and (max-height: 980px) and (min-height: 870px) {
+        .modalContent{height: 64%;margin-top: 9%;} 
+        .modalHeadX{font-size: 1.1em;padding: 0.5em;}
+        .modalBody{width: 100%;font-size: 70%;margin-top: 9%;}
+        .modalImg{margin-top: 3.2%;margin-bottom: 2%;}
+        .modalInfo{padding-top: 9%;padding-right: 5%;}
+        .modalImg img{width: 95%;margin-left: 18%;}
+        .modalFooter{font-size: 83%; padding-top: 3%;}
+    }
+    @media only screen and (max-height: 869px) and (min-height: 760px) {
+        .modalContent{height: 69%;margin-top: 9%;} 
+        .modalHeadX{font-size: 1.1em;padding: 0.5em;}
+        .modalBody{width: 100%;font-size: 70%;margin-top: 9%;}
+        .modalImg{margin-top: 3.2%;margin-bottom: 2%;}
+        .modalInfo{padding-top: 8%;padding-right: 5%;}
+        .modalImg img{width: 113%;margin-left: 12%; margin-top: 3%;}
+        .modalFooter{font-size: 83%; padding-top: 3%;}
+    }
+    @media only screen and (max-height: 759px) and (min-height: 130px) {
+        .modalContent{height: 64%;margin-top: 9%;} 
+        .modalHeadX{font-size: 1.1em;padding: 0.5em;}
+        .modalBody{width: 96%;font-size: 70%;margin-top: 7%; margin-left:2%;height: 82%;}
+        .modalImg{margin-top: 9.2%;margin-bottom: 2%;}
+        .modalInfo{padding-top: 14%;padding-right: 5%;width: 30%;font-size: 1.6vh;}
+        .modalImg img{width: 78%;margin-left: 18%; margin-top: -1%;height: 82%;}
+        .modalFooter{display: none;}
+        .modalDescription{display: block;width: 30%;padding-top: 17%;padding-left: 0;font-size: 1.6vh;}
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 727px) {
+    @media only screen and (max-height: 980px) and (min-height: 870px) {
+        .modalContent{height: 64%;margin-top: 9%;} 
+        .modalHeadX{font-size: 1.1em;padding: 0.5em;}
+        .modalBody{width: 100%;font-size: 70%;margin-top: 9%;}
+        .modalImg{margin-top: 3.2%;margin-bottom: 2%;}
+        .modalInfo{padding-top: 9%;padding-right: 5%;}
+        .modalImg img{width: 148%;margin-left: 0;margin-top: 24%;height: 82%;}
+        .modalFooter{font-size: 83%; padding-top: 3%;}
+    }
+    @media only screen and (max-height: 869px) and (min-height: 760px) {
+        .modalContent{height: 70%;margin-top: 9%;} 
+        .modalHeadX{font-size: 1.1em;padding: 0.5em;}
+        .modalBody{width: 100%;font-size: 70%;margin-top: 9%;}
+        .modalImg{margin-top: 3.2%;margin-bottom: 2%;}
+        .modalInfo{padding-top: 10%;padding-right: 5%;}
+        .modalImg img{width: 138%;margin-left: 3%; margin-top: 9%;}
+        .modalFooter{font-size: 83%; padding-top: 3%;}
+    }
+    @media only screen and (max-height: 759px) and (min-height: 130px) {
+        .modalContent{height: 64%;margin-top: 9%;} 
+        .modalHeadX{font-size: 1.1em;padding: 0.5em;}
+        .modalBody{width: 96%;font-size: 70%;margin-top: 7%; margin-left:2%;height: 82%;}
+        .modalImg{margin-top: 9.2%;margin-bottom: 2%;}
+        .modalInfo{padding-top: 5%;padding-right: 5%;width: 30%;font-size: 1.6vh;}
+        .modalImg img{width: 78%;margin-left: 18%;margin-top: -27%;height: 44vh;}
+        .modalFooter{display: none;}
+        .modalDescription{display: block;width: 30%;padding-top: 7%;padding-left: 0;font-size: 1.6vh;}
+    }
+}
+
+/*SMALL SCREEN */
+@media only screen and (max-width: 726px) and (min-width:556px) {
+    
+        @media only screen and (max-height: 980px) and (min-height: 870px) {
+            .modalContent{height: 64%; margin-top: 9%;} 
+            .modalHeadX{font-size: 1.1em;padding: 0.5em;}
+            .modalBody{width: 100%;font-size: 70%;margin-top: 9%;}
+            .modalImg{margin-top: 3.2%;margin-bottom: 2%;}
+            .modalInfo{padding-top: 9%;padding-right: 5%;}
+            .modalImg img{width: 148%;margin-left: 3%; margin-top: 36%;height: 82%;}
+            .modalFooter{font-size: 83%; padding-top: 3%;}
+        }
+        @media only screen and (max-height: 869px) and (min-height: 760px) {
+            .modalContent{height: 73%;margin-top: 9%; width: 51%;} 
+            .modalHeadX{font-size: 1.1em;padding: 0.5em;}
+            .modalBody{width: 100%;font-size: 70%;margin-top: 9%;}
+            .modalImg{margin-top: 3.2%;margin-bottom: 2%;}
+            .modalInfo{padding-top: 5%;padding-right: 5%;}
+            .modalImg img{width: 140%;margin-left: -3%; margin-top: 30%;height: 74%;}
+            .modalFooter{font-size: 83%; padding-top: 3%;}
+        }
+        @media only screen and (max-height: 759px) and (min-height: 130px) {
+            .modalContent{height: 71%;width: 73%;margin-top: 9%;} 
+            .modalHeadX{font-size: 1.1em;padding: 0.5em;}
+            .modalBody{width: 96%;font-size: 70%;margin-top: 7%; margin-left:2%;height: 82%;}
+            .modalImg{margin-top: 9.2%;margin-bottom: 2%;}
+            .modalInfo{padding-top: 15%;padding-right: -4%;width: 30%;font-size: 1.6vh;}
+            .modalImg img{width: 89%;margin-left: 18%;margin-top: 22%;height: 62%;}
+            .modalFooter{display: none;}
+            .modalDescription{display: block;width: 30%;padding-top: 13%;padding-left: 0;font-size: 1.6vh;}
+        }
+} 
+
+@media only screen and (max-width: 555px) and (min-width:240px) {
+    
+        @media only screen and (max-height: 980px) and (min-height: 870px) {
+            .modalContent{height: 82%;margin-top: 9%; width: 97%;} 
+            .modalHeadX{font-size: 1.1em;padding: 0.5em;}
+            .modalBody{width: 100%;font-size: 70%;margin-top: 9%;}
+            .modalImg{margin-top: 3.2%;margin-bottom: 2%;}
+            .modalInfo{padding-top: 9%;padding-right: 5%;}
+            .modalImg img{width: 135%;margin-left: -1%; margin-top: 30%; height: 82%;}
+            .modalFooter{font-size: 83%; padding-top: 3%;}
+        }
+        @media only screen and (max-height: 869px) and (min-height: 760px) {
+            .modalContent{height: 91%;margin-top: 9%; width: 91%;} 
+            .modalHeadX{font-size: 1.1em;padding: 0.5em;}
+            .modalBody{width: 100%;font-size: 70%;margin-top: 9%;}
+            .modalImg{margin-top: 3.2%;margin-bottom: 2%;}
+            .modalInfo{padding-top: 5%;padding-right: 5%;}
+            .modalImg img{width: 151%; height: 60%; margin-left: 1%; margin-top: 79%;}
+            .modalFooter{font-size: 83%; padding-top: 3%;}
+        }
+        @media only screen and (max-height: 759px) and (min-height: 130px) {
+            .modalContent{height: 75%; width: 101%; margin-top: 9%;} 
+            .modalHeadX{font-size: 1.1em;padding: 0.5em;}
+            .modalBody{width: 96%;font-size: 70%;margin-top: 7%; margin-left:2%;height: 82%;}
+            .modalImg{margin-top: 9.2%;margin-bottom: 2%;}
+            .modalInfo{padding-top: 21%; padding-right:-4%; width: 30%;font-size: 87%;}
+            .modalImg img{width: 89%;margin-left: 18%;margin-top: 33%;height: 68%;}
+            .modalFooter{display: none;}
+            .modalDescription{display: block;width: 30%;padding-top: 24%;padding-left: 0;font-size: 76%;}
+        }
+}
+
+
+/* Cart */
+.removeItem img{
+    width: 10%;
+    padding-bottom: 1%;
+}
+
+.imageItem img{
+    width: 25%;
+}
+
+.productRow{
+    padding-right: 2%;
+}
+
+.priceRow{
+    font-size: 1.2em;
+}
+
+.quantityRow{
+    padding-left: 6%;
+}
+
+.subtotalRow{
+    color: green;
+}
+
+thead td, .middle_row td, #last_row td, thead tr td{
+    width: 10%;
+    padding: 0.5% 1%;
+}
+
+.totalCartRow{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.checkout{
+    font-size: 97%;
+    font-weight: 700;
+    padding: 15px 30px;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.15s;
+    background: rgb(167 219 213);
+    float: right;
+    margin-right: 9%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+/* CART WINDOW */
+.cartModal{   
+    position: fixed;
+    top: 5%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(50,50,50,0.6);
+    padding-top: 2%;
+    display: none;
+}
+
+.cartContent{
+    position: relative;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    width: 42vw;
+    height: 71vh;
+    margin: 0 auto;
+    background-color: rgb(167 219 213);
+    border: 7px solid #daa5208f;
+    border-radius: 4px;
+    padding: 2%;
+    margin-top: 7%;
+}
+
+.shippingInfo{
+    margin-left: 4%;
+    margin-top: 10%;
+}
+
+.name{
+    display: flex;
+    gap: 1.5%;
+    margin-bottom: 9%;
+}
+
+.shippingadress{
+    display: flex;
+    gap: 1.5%;
+    margin-top: 9%;
+    justify-content: start;
+}
+
+.heading1{
+    margin-top: 6%;
+    margin-bottom: -1%;
+}
+
+.heading2{
+    margin-top: 9%;
+    margin-bottom: 7%;
+    margin-left: -4%;
+}
+
+.phone{
+    margin-top: 6%;
+}
+
+.contactinfo{
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+
+.shipad{
+    display: flex;
+    flex-direction: row;
+}
+
+.shipad label{
+    width: 22%;
+}
+
+.shipad input{
+    width: 75%;
+}
